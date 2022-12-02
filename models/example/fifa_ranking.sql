@@ -1,0 +1,1 @@
+SELECT * FROM `world_cup.fifa_ranking`
