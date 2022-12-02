@@ -1,1 +1,3 @@
-SELECT * FROM `world_cup.fifa_ranking`
+{{ config(materialized='table') }}
+
+SELECT * FROM `airflow-dwh.world_cup.fifa_ranking`
