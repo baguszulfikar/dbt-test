@@ -1,8 +1,7 @@
 {{ config(
-    materialized='table',
-    unique_key='id'
+    materialized='table'
 ) }}
 
-SELECT date || home_team || away_team as id
+SELECT 
 * 
-FROM {{ ref('world_cup.match_result') }}
+FROM `world_cup.match_result`
