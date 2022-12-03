@@ -1,3 +1,8 @@
-{{ config(materialized='table') }}
+{{ config(
+    materialized='table',
+    unique_key='id'
+) }}
 
-SELECT * FROM `airflow-dwh.world_cup.match_result`
+SELECT date || home_team || away_team as id
+* 
+FROM {{ ref('world_cup.match_result') }}
