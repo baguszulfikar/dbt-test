@@ -1,4 +1,5 @@
 {{ config(
+    alias = 'match_result',
     materialized='table'
 ) }}
 
