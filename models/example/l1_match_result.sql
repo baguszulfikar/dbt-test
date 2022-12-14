@@ -10,7 +10,7 @@ SELECT date || home_team || away_team as id,
     away_team,
     home_score,
     away_score,
-    turnament,
+    tournament,
     city,
     country,
     neutral
