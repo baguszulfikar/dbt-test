@@ -6,4 +6,4 @@
 
 SELECT date || home_team || away_team as id
 * 
-FROM {{ ref('example_match_result') }}
+FROM {{ ref('match_result') }}
